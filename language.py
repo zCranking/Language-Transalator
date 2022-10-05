@@ -14,7 +14,7 @@ title = Label(root, text="Language Transalator", bg="#EE6352", fg="#5465FF", fon
 font = ("Consolas", 22, "normal")
 title.place(relx=0.5, rely=0.1, anchor=CENTER)
 
-text = Text(root, bg="#EE6352", font=("Comic Sans MS", "15", "bold"), height=15, wrap=WORD, width=40, padx=5, pady=5, bd=0)
+text = Text(root, font=("Comic Sans MS", "15", "bold"), height=15, wrap=WORD, width=40, padx=5, pady=5, bd=0)
 text.place(relx=0.5, rely=0.55, anchor=CENTER)
 
 root.mainloop()
