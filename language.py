@@ -1,7 +1,7 @@
 from tkinter import *
 from tkinter import ttk
 from PIL import ImageTk, Image
-from googletrans import Translator
+from googletrans import Translator, LANGUAGES
 
 root = Tk()
 root.title("Language Transalator")
@@ -15,7 +15,7 @@ text = Text(root, font=("Consolas", 22, "normal"), height=15, wrap=WORD, width=4
 text.place(relx=0.5, rely=0.65, anchor=CENTER)
 
 Thelist = list(LANGUAGES.values())
-languages = ttk.Combobox(state=readonly, values=Thelist[1], width=6)
+languages = ttk.Combobox(state="readonly", values=Thelist[1], width=6)
 languages.place(relx=0.2, rely=0.5, anchor=CENTER)
 languages.set("english")
 
